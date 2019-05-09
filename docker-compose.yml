@@ -1,8 +1,5 @@
 version: '3.7'
 
-# same as
-# docker run -p 80:4000 -v $(pwd):/site bretfisher/jekyll-serve
-
 services:
 
   webapp:
