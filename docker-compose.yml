@@ -1,0 +1,19 @@
+version: '3.7'
+
+# same as
+# docker run -p 80:4000 -v $(pwd):/site bretfisher/jekyll-serve
+
+services:
+
+  webapp:
+    image: netmaiesta/django:1
+    container_name: mycontainer
+    volumes:
+      - .:/usr/src/app/django/mysite
+    ports:
+      - '5000:5000'
+    entrypoint:
+      - python3
+      - /usr/src/app/django/mysite/manage.py 
+      - runserver
+      - 0.0.0.0:5000
