@@ -1,16 +1,12 @@
 version: '3.7'
-
 services:
-
   webapp:
-    image: netmaiesta/django:1
-    container_name: mycontainer
+    image: netmaiesta/django:3.4
+    container_name: dtest
     volumes:
-      - .:/usr/src/app/django/mysite
+      - .:/usr/src/app/django/site
+      - ./data:/data
     ports:
       - '5000:5000'
-    entrypoint:
-      - python3
-      - /usr/src/app/django/mysite/manage.py 
-      - runserver
-      - 0.0.0.0:5000
+      - '27017:27017'
+    entrypoint: /code/entrypoint.sh
