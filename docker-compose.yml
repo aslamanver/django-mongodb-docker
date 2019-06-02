@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   webapp:
-    image: netmaiesta/django:3.4
+    image: netmaiesta/django:3.6
     container_name: dtest
     volumes:
       - .:/usr/src/app/django/site
