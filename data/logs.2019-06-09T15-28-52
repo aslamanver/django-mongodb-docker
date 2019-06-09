@@ -1,0 +1,34 @@
+2019-06-09T15:27:01.494+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/data/db 64-bit host=6e9f32535582
+2019-06-09T15:27:01.494+0000 I CONTROL  [initandlisten] db version v3.6.3
+2019-06-09T15:27:01.494+0000 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2019-06-09T15:27:01.494+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.0g  2 Nov 2017
+2019-06-09T15:27:01.494+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-06-09T15:27:01.494+0000 I CONTROL  [initandlisten] modules: none
+2019-06-09T15:27:01.494+0000 I CONTROL  [initandlisten] build environment:
+2019-06-09T15:27:01.494+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2019-06-09T15:27:01.494+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-06-09T15:27:01.494+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "0.0.0.0", port: 27017 }, processManagement: { fork: true }, storage: { dbPath: "/data/db" }, systemLog: { destination: "file", path: "/data/logs" } }
+2019-06-09T15:27:01.494+0000 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2019-06-09T15:27:01.495+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-06-09T15:27:01.495+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2019-06-09T15:27:01.495+0000 I STORAGE  [initandlisten] 
+2019-06-09T15:27:01.495+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2019-06-09T15:27:01.495+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2019-06-09T15:27:01.495+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7454M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-06-09T15:27:02.364+0000 I STORAGE  [initandlisten] WiredTiger message [1560094022:364459][8:0x7f3891c7af80], txn-recover: Main recovery loop: starting at 22/256
+2019-06-09T15:27:02.364+0000 I STORAGE  [initandlisten] WiredTiger message [1560094022:364837][8:0x7f3891c7af80], txn-recover: Recovering log 22 through 23
+2019-06-09T15:27:02.483+0000 I STORAGE  [initandlisten] WiredTiger message [1560094022:483885][8:0x7f3891c7af80], file:index-1--6625065177016023062.wt, txn-recover: Recovering log 23 through 23
+2019-06-09T15:27:03.262+0000 I CONTROL  [initandlisten] 
+2019-06-09T15:27:03.263+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-06-09T15:27:03.263+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-06-09T15:27:03.263+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2019-06-09T15:27:03.263+0000 I CONTROL  [initandlisten] 
+2019-06-09T15:27:03.316+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2019-06-09T15:27:03.316+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2019-06-09T15:27:03.848+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41292 #1 (1 connection now open)
+2019-06-09T15:27:03.849+0000 I NETWORK  [conn1] received client metadata from 172.18.0.1:41292 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:27:03.851+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41296 #2 (2 connections now open)
+2019-06-09T15:27:03.851+0000 I NETWORK  [conn2] received client metadata from 172.18.0.1:41296 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:27:04.003+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2019-06-09T15:27:04.372+0000 I NETWORK  [conn2] end connection 172.18.0.1:41296 (1 connection now open)
+2019-06-09T15:27:04.372+0000 I NETWORK  [conn1] end connection 172.18.0.1:41292 (0 connections now open)

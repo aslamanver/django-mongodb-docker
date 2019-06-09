@@ -1,0 +1,48 @@
+2019-06-09T15:26:25.827+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/data/db 64-bit host=6e9f32535582
+2019-06-09T15:26:25.827+0000 I CONTROL  [initandlisten] db version v3.6.3
+2019-06-09T15:26:25.827+0000 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2019-06-09T15:26:25.827+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.0g  2 Nov 2017
+2019-06-09T15:26:25.827+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-06-09T15:26:25.827+0000 I CONTROL  [initandlisten] modules: none
+2019-06-09T15:26:25.828+0000 I CONTROL  [initandlisten] build environment:
+2019-06-09T15:26:25.828+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2019-06-09T15:26:25.828+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-06-09T15:26:25.828+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "0.0.0.0", port: 27017 }, processManagement: { fork: true }, storage: { dbPath: "/data/db" }, systemLog: { destination: "file", path: "/data/logs" } }
+2019-06-09T15:26:25.828+0000 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2019-06-09T15:26:25.828+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-06-09T15:26:25.828+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2019-06-09T15:26:25.829+0000 I STORAGE  [initandlisten] 
+2019-06-09T15:26:25.829+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2019-06-09T15:26:25.829+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2019-06-09T15:26:25.829+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7454M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-06-09T15:26:26.672+0000 I STORAGE  [initandlisten] WiredTiger message [1560093986:672725][8:0x7f9647838f80], txn-recover: Main recovery loop: starting at 21/256
+2019-06-09T15:26:26.673+0000 I STORAGE  [initandlisten] WiredTiger message [1560093986:673118][8:0x7f9647838f80], txn-recover: Recovering log 21 through 22
+2019-06-09T15:26:26.759+0000 I STORAGE  [initandlisten] WiredTiger message [1560093986:759339][8:0x7f9647838f80], file:index-3-5522191750971899046.wt, txn-recover: Recovering log 22 through 22
+2019-06-09T15:26:27.406+0000 I CONTROL  [initandlisten] 
+2019-06-09T15:26:27.406+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-06-09T15:26:27.406+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-06-09T15:26:27.406+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2019-06-09T15:26:27.406+0000 I CONTROL  [initandlisten] 
+2019-06-09T15:26:27.457+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2019-06-09T15:26:27.458+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2019-06-09T15:26:27.816+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41198 #1 (1 connection now open)
+2019-06-09T15:26:27.816+0000 I NETWORK  [conn1] received client metadata from 172.18.0.1:41198 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:26:27.818+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41202 #2 (2 connections now open)
+2019-06-09T15:26:27.818+0000 I NETWORK  [conn2] received client metadata from 172.18.0.1:41202 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:26:27.819+0000 I STORAGE  [conn2] createCollection: test.customer_wiki with generated UUID: 03b26e6d-8a7b-4e25-9f4b-0c738cbb9613
+2019-06-09T15:26:28.009+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2019-06-09T15:26:28.148+0000 I COMMAND  [conn2] command test.customer_wiki command: insert { insert: "customer_wiki", ordered: true, writeConcern: { w: 1 }, lsid: { id: UUID("a1deafec-c5b7-4d24-a6ed-8ac8926b9560") }, $db: "test", $readPreference: { mode: "primary" } } ninserted:1 keysInserted:1 numYields:0 reslen:29 locks:{ Global: { acquireCount: { r: 5, w: 3 } }, Database: { acquireCount: { r: 1, w: 2, W: 1 } }, Collection: { acquireCount: { r: 1, w: 2 } } } protocol:op_msg 329ms
+2019-06-09T15:26:28.330+0000 I NETWORK  [conn1] end connection 172.18.0.1:41198 (0 connections now open)
+2019-06-09T15:26:28.330+0000 I NETWORK  [conn2] end connection 172.18.0.1:41202 (1 connection now open)
+2019-06-09T15:26:36.827+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41226 #3 (1 connection now open)
+2019-06-09T15:26:36.828+0000 I NETWORK  [conn3] received client metadata from 172.18.0.1:41226 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:26:36.829+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41230 #4 (2 connections now open)
+2019-06-09T15:26:36.829+0000 I NETWORK  [conn4] received client metadata from 172.18.0.1:41230 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:26:37.354+0000 I NETWORK  [conn4] end connection 172.18.0.1:41230 (1 connection now open)
+2019-06-09T15:26:37.354+0000 I NETWORK  [conn3] end connection 172.18.0.1:41226 (0 connections now open)
+2019-06-09T15:26:41.599+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41238 #5 (1 connection now open)
+2019-06-09T15:26:41.599+0000 I NETWORK  [conn5] received client metadata from 172.18.0.1:41238 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:26:41.601+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41242 #6 (2 connections now open)
+2019-06-09T15:26:41.601+0000 I NETWORK  [conn6] received client metadata from 172.18.0.1:41242 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:26:42.126+0000 I NETWORK  [conn6] end connection 172.18.0.1:41242 (1 connection now open)
+2019-06-09T15:26:42.126+0000 I NETWORK  [conn5] end connection 172.18.0.1:41238 (0 connections now open)

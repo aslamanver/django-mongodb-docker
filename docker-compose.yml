@@ -1,8 +1,8 @@
 version: '3.7'
 services:
   webapp:
-    image: netmaiesta/django:3.6
-    container_name: dtest
+    image: netmaiesta/django:4.0.1
+    container_name: django-container
     volumes:
       - .:/usr/src/app/django/site
       - ./data:/data

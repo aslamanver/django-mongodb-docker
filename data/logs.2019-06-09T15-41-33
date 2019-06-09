@@ -1,0 +1,124 @@
+2019-06-09T15:28:52.106+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/data/db 64-bit host=6e9f32535582
+2019-06-09T15:28:52.106+0000 I CONTROL  [initandlisten] db version v3.6.3
+2019-06-09T15:28:52.106+0000 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2019-06-09T15:28:52.106+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.0g  2 Nov 2017
+2019-06-09T15:28:52.106+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-06-09T15:28:52.106+0000 I CONTROL  [initandlisten] modules: none
+2019-06-09T15:28:52.106+0000 I CONTROL  [initandlisten] build environment:
+2019-06-09T15:28:52.106+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2019-06-09T15:28:52.106+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-06-09T15:28:52.106+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "0.0.0.0", port: 27017 }, processManagement: { fork: true }, storage: { dbPath: "/data/db" }, systemLog: { destination: "file", path: "/data/logs" } }
+2019-06-09T15:28:52.106+0000 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2019-06-09T15:28:52.107+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-06-09T15:28:52.107+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2019-06-09T15:28:52.107+0000 I STORAGE  [initandlisten] 
+2019-06-09T15:28:52.107+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2019-06-09T15:28:52.107+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2019-06-09T15:28:52.107+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7454M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-06-09T15:28:52.960+0000 I STORAGE  [initandlisten] WiredTiger message [1560094132:960530][8:0x7fbe02acef80], txn-recover: Main recovery loop: starting at 23/256
+2019-06-09T15:28:52.960+0000 I STORAGE  [initandlisten] WiredTiger message [1560094132:960915][8:0x7fbe02acef80], txn-recover: Recovering log 23 through 24
+2019-06-09T15:28:53.056+0000 I STORAGE  [initandlisten] WiredTiger message [1560094133:56096][8:0x7fbe02acef80], file:index-1--6625065177016023062.wt, txn-recover: Recovering log 24 through 24
+2019-06-09T15:28:53.725+0000 I CONTROL  [initandlisten] 
+2019-06-09T15:28:53.725+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-06-09T15:28:53.725+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-06-09T15:28:53.725+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2019-06-09T15:28:53.725+0000 I CONTROL  [initandlisten] 
+2019-06-09T15:28:53.780+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2019-06-09T15:28:53.780+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2019-06-09T15:28:54.006+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2019-06-09T15:28:54.088+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41538 #1 (1 connection now open)
+2019-06-09T15:28:54.088+0000 I NETWORK  [conn1] received client metadata from 172.18.0.1:41538 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:28:54.090+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41542 #2 (2 connections now open)
+2019-06-09T15:28:54.090+0000 I NETWORK  [conn2] received client metadata from 172.18.0.1:41542 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:28:54.603+0000 I NETWORK  [conn2] end connection 172.18.0.1:41542 (1 connection now open)
+2019-06-09T15:28:54.603+0000 I NETWORK  [conn1] end connection 172.18.0.1:41538 (0 connections now open)
+2019-06-09T15:29:27.932+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41602 #3 (1 connection now open)
+2019-06-09T15:29:27.932+0000 I NETWORK  [conn3] received client metadata from 172.18.0.1:41602 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:29:27.934+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41606 #4 (2 connections now open)
+2019-06-09T15:29:27.934+0000 I NETWORK  [conn4] received client metadata from 172.18.0.1:41606 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:29:28.446+0000 I NETWORK  [conn4] end connection 172.18.0.1:41606 (1 connection now open)
+2019-06-09T15:29:28.446+0000 I NETWORK  [conn3] end connection 172.18.0.1:41602 (0 connections now open)
+2019-06-09T15:29:55.665+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41652 #5 (1 connection now open)
+2019-06-09T15:29:55.666+0000 I NETWORK  [conn5] received client metadata from 172.18.0.1:41652 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:29:55.667+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41656 #6 (2 connections now open)
+2019-06-09T15:29:55.667+0000 I NETWORK  [conn6] received client metadata from 172.18.0.1:41656 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:29:56.186+0000 I NETWORK  [conn6] end connection 172.18.0.1:41656 (1 connection now open)
+2019-06-09T15:29:56.187+0000 I NETWORK  [conn5] end connection 172.18.0.1:41652 (0 connections now open)
+2019-06-09T15:30:07.994+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41678 #7 (1 connection now open)
+2019-06-09T15:30:07.994+0000 I NETWORK  [conn7] received client metadata from 172.18.0.1:41678 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:30:07.995+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41682 #8 (2 connections now open)
+2019-06-09T15:30:07.995+0000 I NETWORK  [conn8] received client metadata from 172.18.0.1:41682 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:30:08.525+0000 I NETWORK  [conn8] end connection 172.18.0.1:41682 (1 connection now open)
+2019-06-09T15:30:08.525+0000 I NETWORK  [conn7] end connection 172.18.0.1:41678 (0 connections now open)
+2019-06-09T15:30:55.625+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41848 #9 (1 connection now open)
+2019-06-09T15:30:55.626+0000 I NETWORK  [conn9] received client metadata from 172.18.0.1:41848 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:30:55.627+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41852 #10 (2 connections now open)
+2019-06-09T15:30:55.628+0000 I NETWORK  [conn10] received client metadata from 172.18.0.1:41852 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:30:56.149+0000 I NETWORK  [conn10] end connection 172.18.0.1:41852 (1 connection now open)
+2019-06-09T15:30:56.149+0000 I NETWORK  [conn9] end connection 172.18.0.1:41848 (0 connections now open)
+2019-06-09T15:31:09.764+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41872 #11 (1 connection now open)
+2019-06-09T15:31:09.765+0000 I NETWORK  [conn11] received client metadata from 172.18.0.1:41872 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:31:09.766+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41876 #12 (2 connections now open)
+2019-06-09T15:31:09.766+0000 I NETWORK  [conn12] received client metadata from 172.18.0.1:41876 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:31:10.277+0000 I NETWORK  [conn12] end connection 172.18.0.1:41876 (1 connection now open)
+2019-06-09T15:31:10.277+0000 I NETWORK  [conn11] end connection 172.18.0.1:41872 (0 connections now open)
+2019-06-09T15:31:21.363+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41902 #13 (1 connection now open)
+2019-06-09T15:31:21.363+0000 I NETWORK  [conn13] received client metadata from 172.18.0.1:41902 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:31:21.364+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41906 #14 (2 connections now open)
+2019-06-09T15:31:21.365+0000 I NETWORK  [conn14] received client metadata from 172.18.0.1:41906 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:31:21.874+0000 I NETWORK  [conn14] end connection 172.18.0.1:41906 (1 connection now open)
+2019-06-09T15:31:21.874+0000 I NETWORK  [conn13] end connection 172.18.0.1:41902 (0 connections now open)
+2019-06-09T15:31:26.848+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41920 #15 (1 connection now open)
+2019-06-09T15:31:26.848+0000 I NETWORK  [conn15] received client metadata from 172.18.0.1:41920 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:31:26.850+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41924 #16 (2 connections now open)
+2019-06-09T15:31:26.850+0000 I NETWORK  [conn16] received client metadata from 172.18.0.1:41924 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:31:27.372+0000 I NETWORK  [conn16] end connection 172.18.0.1:41924 (1 connection now open)
+2019-06-09T15:31:27.372+0000 I NETWORK  [conn15] end connection 172.18.0.1:41920 (0 connections now open)
+2019-06-09T15:31:37.557+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41940 #17 (1 connection now open)
+2019-06-09T15:31:37.557+0000 I NETWORK  [conn17] received client metadata from 172.18.0.1:41940 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:31:37.559+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41944 #18 (2 connections now open)
+2019-06-09T15:31:37.559+0000 I NETWORK  [conn18] received client metadata from 172.18.0.1:41944 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:31:38.078+0000 I NETWORK  [conn18] end connection 172.18.0.1:41944 (1 connection now open)
+2019-06-09T15:31:38.078+0000 I NETWORK  [conn17] end connection 172.18.0.1:41940 (0 connections now open)
+2019-06-09T15:32:02.688+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41982 #19 (1 connection now open)
+2019-06-09T15:32:02.689+0000 I NETWORK  [conn19] received client metadata from 172.18.0.1:41982 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:32:02.690+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:41986 #20 (2 connections now open)
+2019-06-09T15:32:02.690+0000 I NETWORK  [conn20] received client metadata from 172.18.0.1:41986 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:32:03.211+0000 I NETWORK  [conn20] end connection 172.18.0.1:41986 (1 connection now open)
+2019-06-09T15:32:03.211+0000 I NETWORK  [conn19] end connection 172.18.0.1:41982 (0 connections now open)
+2019-06-09T15:32:12.786+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42002 #21 (1 connection now open)
+2019-06-09T15:32:12.787+0000 I NETWORK  [conn21] received client metadata from 172.18.0.1:42002 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:32:12.788+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42006 #22 (2 connections now open)
+2019-06-09T15:32:12.788+0000 I NETWORK  [conn22] received client metadata from 172.18.0.1:42006 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:32:13.310+0000 I NETWORK  [conn22] end connection 172.18.0.1:42006 (1 connection now open)
+2019-06-09T15:32:13.310+0000 I NETWORK  [conn21] end connection 172.18.0.1:42002 (0 connections now open)
+2019-06-09T15:32:18.184+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42014 #23 (1 connection now open)
+2019-06-09T15:32:18.184+0000 I NETWORK  [conn23] received client metadata from 172.18.0.1:42014 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:32:18.185+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42018 #24 (2 connections now open)
+2019-06-09T15:32:18.185+0000 I NETWORK  [conn24] received client metadata from 172.18.0.1:42018 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:32:18.694+0000 I NETWORK  [conn24] end connection 172.18.0.1:42018 (1 connection now open)
+2019-06-09T15:32:18.694+0000 I NETWORK  [conn23] end connection 172.18.0.1:42014 (0 connections now open)
+2019-06-09T15:33:54.803+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42144 #25 (1 connection now open)
+2019-06-09T15:33:54.803+0000 I NETWORK  [conn25] received client metadata from 172.18.0.1:42144 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:33:54.805+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42148 #26 (2 connections now open)
+2019-06-09T15:33:54.805+0000 I NETWORK  [conn26] received client metadata from 172.18.0.1:42148 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:33:55.316+0000 I NETWORK  [conn26] end connection 172.18.0.1:42148 (1 connection now open)
+2019-06-09T15:33:55.316+0000 I NETWORK  [conn25] end connection 172.18.0.1:42144 (0 connections now open)
+2019-06-09T15:34:12.267+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42182 #27 (1 connection now open)
+2019-06-09T15:34:12.267+0000 I NETWORK  [conn27] received client metadata from 172.18.0.1:42182 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:34:12.268+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42186 #28 (2 connections now open)
+2019-06-09T15:34:12.271+0000 I NETWORK  [conn28] received client metadata from 172.18.0.1:42186 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:34:12.792+0000 I NETWORK  [conn28] end connection 172.18.0.1:42186 (1 connection now open)
+2019-06-09T15:34:12.792+0000 I NETWORK  [conn27] end connection 172.18.0.1:42182 (0 connections now open)
+2019-06-09T15:35:11.911+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42322 #29 (1 connection now open)
+2019-06-09T15:35:11.911+0000 I NETWORK  [conn29] received client metadata from 172.18.0.1:42322 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:35:12.430+0000 I NETWORK  [conn29] end connection 172.18.0.1:42322 (0 connections now open)
+2019-06-09T15:35:21.212+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42336 #30 (1 connection now open)
+2019-06-09T15:35:21.212+0000 I NETWORK  [conn30] received client metadata from 172.18.0.1:42336 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:35:21.730+0000 I NETWORK  [conn30] end connection 172.18.0.1:42336 (0 connections now open)
+2019-06-09T15:37:09.773+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42512 #31 (1 connection now open)
+2019-06-09T15:37:09.773+0000 I NETWORK  [conn31] received client metadata from 172.18.0.1:42512 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:37:09.775+0000 I NETWORK  [listener] connection accepted from 172.18.0.1:42516 #32 (2 connections now open)
+2019-06-09T15:37:09.775+0000 I NETWORK  [conn32] received client metadata from 172.18.0.1:42516 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-21-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-09T15:37:10.288+0000 I NETWORK  [conn32] end connection 172.18.0.1:42516 (1 connection now open)
+2019-06-09T15:37:10.288+0000 I NETWORK  [conn31] end connection 172.18.0.1:42512 (0 connections now open)

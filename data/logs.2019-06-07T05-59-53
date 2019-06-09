@@ -1,0 +1,44 @@
+2019-06-03T04:33:04.353+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/data/db 64-bit host=9852658eb991
+2019-06-03T04:33:04.353+0000 I CONTROL  [initandlisten] db version v3.6.3
+2019-06-03T04:33:04.353+0000 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2019-06-03T04:33:04.353+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.0g  2 Nov 2017
+2019-06-03T04:33:04.353+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-06-03T04:33:04.353+0000 I CONTROL  [initandlisten] modules: none
+2019-06-03T04:33:04.353+0000 I CONTROL  [initandlisten] build environment:
+2019-06-03T04:33:04.353+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2019-06-03T04:33:04.353+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-06-03T04:33:04.353+0000 I CONTROL  [initandlisten] options: { net: { port: 27017 }, processManagement: { fork: true }, storage: { dbPath: "/data/db" }, systemLog: { destination: "file", path: "/data/logs" } }
+2019-06-03T04:33:04.353+0000 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2019-06-03T04:33:04.354+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-06-03T04:33:04.354+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2019-06-03T04:33:04.354+0000 I STORAGE  [initandlisten] 
+2019-06-03T04:33:04.354+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2019-06-03T04:33:04.354+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2019-06-03T04:33:04.354+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7454M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-06-03T04:33:05.176+0000 I STORAGE  [initandlisten] WiredTiger message [1559536385:176255][8:0x7fa29f1f5f80], txn-recover: Main recovery loop: starting at 1/0
+2019-06-03T04:33:05.176+0000 I STORAGE  [initandlisten] WiredTiger message [1559536385:176865][8:0x7fa29f1f5f80], txn-recover: Recovering log 1 through 2
+2019-06-03T04:33:05.277+0000 I STORAGE  [initandlisten] WiredTiger message [1559536385:277749][8:0x7fa29f1f5f80], file:index-3-5522191750971899046.wt, txn-recover: Recovering log 2 through 2
+2019-06-03T04:33:05.993+0000 I CONTROL  [initandlisten] 
+2019-06-03T04:33:05.994+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-06-03T04:33:05.994+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-06-03T04:33:05.994+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2019-06-03T04:33:05.994+0000 I CONTROL  [initandlisten] 
+2019-06-03T04:33:05.994+0000 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-06-03T04:33:05.994+0000 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2019-06-03T04:33:05.994+0000 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2019-06-03T04:33:05.994+0000 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-06-03T04:33:05.994+0000 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-06-03T04:33:05.994+0000 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-06-03T04:33:05.994+0000 I CONTROL  [initandlisten] 
+2019-06-03T04:33:06.043+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2019-06-03T04:33:06.044+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2019-06-03T04:33:36.936+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33546 #1 (1 connection now open)
+2019-06-03T04:33:36.936+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:33546 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2019-06-03T04:33:40.161+0000 I NETWORK  [conn1] end connection 127.0.0.1:33546 (0 connections now open)
+2019-06-03T04:38:06.044+0000 I STORAGE  [thread2] createCollection: config.system.sessions with generated UUID: cd13e989-a2c2-4ec9-933b-15845e75902e
+2019-06-03T04:38:06.445+0000 I INDEX    [thread2] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2019-06-03T04:38:06.446+0000 I INDEX    [thread2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2019-06-03T04:38:06.446+0000 W STORAGE  [thread2] failed to create WiredTiger bulk cursor: Device or resource busy
+2019-06-03T04:38:06.446+0000 W STORAGE  [thread2] falling back to non-bulk cursor for index table:index-2--6590843065922858201
+2019-06-03T04:38:06.446+0000 I INDEX    [thread2] build index done.  scanned 0 total records. 0 secs
+2019-06-03T04:38:06.446+0000 I COMMAND  [thread2] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:98 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_msg 402ms
