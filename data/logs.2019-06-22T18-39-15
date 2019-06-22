@@ -1,0 +1,106 @@
+2019-06-22T18:32:35.313+0000 I CONTROL  [initandlisten] MongoDB starting : pid=8 port=27017 dbpath=/data/db 64-bit host=54972f363121
+2019-06-22T18:32:35.313+0000 I CONTROL  [initandlisten] db version v3.6.3
+2019-06-22T18:32:35.313+0000 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2019-06-22T18:32:35.313+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.0g  2 Nov 2017
+2019-06-22T18:32:35.314+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-06-22T18:32:35.314+0000 I CONTROL  [initandlisten] modules: none
+2019-06-22T18:32:35.314+0000 I CONTROL  [initandlisten] build environment:
+2019-06-22T18:32:35.314+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2019-06-22T18:32:35.314+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-06-22T18:32:35.314+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "0.0.0.0", port: 27017 }, processManagement: { fork: true }, storage: { dbPath: "/data/db" }, systemLog: { destination: "file", path: "/data/logs" } }
+2019-06-22T18:32:35.314+0000 W -        [initandlisten] Detected unclean shutdown - /data/db/mongod.lock is not empty.
+2019-06-22T18:32:35.437+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-06-22T18:32:35.438+0000 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2019-06-22T18:32:35.438+0000 I STORAGE  [initandlisten] 
+2019-06-22T18:32:35.438+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2019-06-22T18:32:35.438+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2019-06-22T18:32:35.457+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7454M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-06-22T18:32:36.429+0000 I STORAGE  [initandlisten] WiredTiger message [1561228356:429942][8:0x7fbec18bcf80], txn-recover: Main recovery loop: starting at 38/3584
+2019-06-22T18:32:36.430+0000 I STORAGE  [initandlisten] WiredTiger message [1561228356:430347][8:0x7fbec18bcf80], txn-recover: Recovering log 38 through 39
+2019-06-22T18:32:36.538+0000 I STORAGE  [initandlisten] WiredTiger message [1561228356:538814][8:0x7fbec18bcf80], txn-recover: Recovering log 39 through 39
+2019-06-22T18:32:37.041+0000 I CONTROL  [initandlisten] 
+2019-06-22T18:32:37.041+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-06-22T18:32:37.041+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-06-22T18:32:37.041+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2019-06-22T18:32:37.041+0000 I CONTROL  [initandlisten] 
+2019-06-22T18:32:37.277+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2019-06-22T18:32:37.277+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2019-06-22T18:32:38.036+0000 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2019-06-22T18:32:43.542+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42084 #1 (1 connection now open)
+2019-06-22T18:32:43.543+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:42084 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-22-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-22T18:33:33.123+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42174 #2 (2 connections now open)
+2019-06-22T18:33:33.124+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:42174 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-22-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-22T18:33:45.909+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48022 #3 (3 connections now open)
+2019-06-22T18:33:45.916+0000 I NETWORK  [conn3] received client metadata from 172.19.0.1:48022 conn: { driver: { name: "nodejs", version: "3.1.13" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.18.0-22-generic" }, platform: "Node.js v10.2.0, LE, mongodb-core: 3.1.11" }
+2019-06-22T18:33:46.067+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48028 #4 (4 connections now open)
+2019-06-22T18:33:46.318+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48036 #5 (5 connections now open)
+2019-06-22T18:33:46.371+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48040 #6 (6 connections now open)
+2019-06-22T18:33:46.399+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48044 #7 (7 connections now open)
+2019-06-22T18:33:56.094+0000 I COMMAND  [conn4] CMD: drop netm.customer
+2019-06-22T18:33:56.094+0000 I STORAGE  [conn4] Finishing collection drop for netm.customer (b93e1aed-d49d-44d2-915f-63553a14194f).
+2019-06-22T18:33:56.195+0000 I COMMAND  [conn4] command netm.customer command: drop { drop: "customer", lsid: { id: UUID("f8ec348f-da02-40a3-8f10-d228f082ee75") }, $db: "netm" } numYields:0 reslen:76 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_query 101ms
+2019-06-22T18:34:02.499+0000 I COMMAND  [conn3] CMD: drop netm.customers
+2019-06-22T18:34:02.499+0000 I STORAGE  [conn3] Finishing collection drop for netm.customers (8cbd3753-f031-4131-9d74-c38b7ed61f13).
+2019-06-22T18:34:07.976+0000 I COMMAND  [conn6] CMD: drop netm.customer_wiki
+2019-06-22T18:34:07.977+0000 I STORAGE  [conn6] Finishing collection drop for netm.customer_wiki (bfec7c42-cb4f-4da5-891d-340c3c21db64).
+2019-06-22T18:34:08.077+0000 I COMMAND  [conn6] command netm.customer_wiki command: drop { drop: "customer_wiki", lsid: { id: UUID("a2a3c676-920d-4e1f-a0e1-37c17e47467e") }, $db: "netm" } numYields:0 reslen:81 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_query 100ms
+2019-06-22T18:34:15.917+0000 I NETWORK  [conn3] end connection 172.19.0.1:48022 (6 connections now open)
+2019-06-22T18:34:16.079+0000 I NETWORK  [conn4] end connection 172.19.0.1:48028 (5 connections now open)
+2019-06-22T18:34:16.321+0000 I NETWORK  [conn5] end connection 172.19.0.1:48036 (4 connections now open)
+2019-06-22T18:34:16.388+0000 I NETWORK  [conn6] end connection 172.19.0.1:48040 (3 connections now open)
+2019-06-22T18:34:16.407+0000 I NETWORK  [conn7] end connection 172.19.0.1:48044 (2 connections now open)
+2019-06-22T18:34:16.922+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48088 #8 (3 connections now open)
+2019-06-22T18:34:17.695+0000 I COMMAND  [conn8] dropDatabase local - starting
+2019-06-22T18:34:17.695+0000 I COMMAND  [conn8] dropDatabase local - dropping 0 collections
+2019-06-22T18:34:17.751+0000 I COMMAND  [conn8] dropDatabase local - finished
+2019-06-22T18:34:17.776+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48092 #9 (4 connections now open)
+2019-06-22T18:34:17.780+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48096 #10 (5 connections now open)
+2019-06-22T18:34:20.573+0000 I COMMAND  [conn8] dropDatabase test - starting
+2019-06-22T18:34:20.573+0000 I COMMAND  [conn8] dropDatabase test - dropping 0 collections
+2019-06-22T18:34:20.613+0000 I COMMAND  [conn8] dropDatabase test - finished
+2019-06-22T18:34:30.166+0000 I COMMAND  [conn9] dropDatabase config - starting
+2019-06-22T18:34:30.166+0000 I COMMAND  [conn9] dropDatabase config - dropping 0 collections
+2019-06-22T18:34:30.619+0000 I COMMAND  [conn9] dropDatabase config - finished
+2019-06-22T18:34:30.655+0000 I COMMAND  [conn9] command config command: dropDatabase { dropDatabase: 1, lsid: { id: UUID("a2a3c676-920d-4e1f-a0e1-37c17e47467e") }, $db: "config" } exception: Direct writes against config.transactions cannot be performed using a transaction or on a session. code:Location40528 numYields:0 reslen:186 locks:{ Global: { acquireCount: { r: 2, w: 1, W: 1 } }, Database: { acquireCount: { W: 1 } } } protocol:op_query 488ms
+2019-06-22T18:34:46.924+0000 I NETWORK  [conn8] end connection 172.19.0.1:48088 (4 connections now open)
+2019-06-22T18:34:47.780+0000 I NETWORK  [conn9] end connection 172.19.0.1:48092 (3 connections now open)
+2019-06-22T18:34:47.783+0000 I NETWORK  [conn10] end connection 172.19.0.1:48096 (2 connections now open)
+2019-06-22T18:34:48.702+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48140 #11 (3 connections now open)
+2019-06-22T18:34:52.998+0000 I NETWORK  [conn2] end connection 127.0.0.1:42174 (2 connections now open)
+2019-06-22T18:34:52.998+0000 I NETWORK  [conn1] end connection 127.0.0.1:42084 (1 connection now open)
+2019-06-22T18:34:53.517+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42318 #12 (2 connections now open)
+2019-06-22T18:34:53.517+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42320 #13 (3 connections now open)
+2019-06-22T18:34:53.517+0000 I NETWORK  [conn12] received client metadata from 127.0.0.1:42318 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-22-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-22T18:34:53.517+0000 I NETWORK  [conn13] received client metadata from 127.0.0.1:42320 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-22-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-22T18:34:56.134+0000 I NETWORK  [conn12] end connection 127.0.0.1:42318 (2 connections now open)
+2019-06-22T18:34:56.168+0000 I NETWORK  [conn13] end connection 127.0.0.1:42320 (1 connection now open)
+2019-06-22T18:34:56.663+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42326 #14 (2 connections now open)
+2019-06-22T18:34:56.666+0000 I NETWORK  [conn14] received client metadata from 127.0.0.1:42326 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-22-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-22T18:34:56.667+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42328 #15 (3 connections now open)
+2019-06-22T18:34:56.667+0000 I NETWORK  [conn15] received client metadata from 127.0.0.1:42328 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-22-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-22T18:35:18.703+0000 I NETWORK  [conn11] end connection 172.19.0.1:48140 (2 connections now open)
+2019-06-22T18:35:20.701+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48210 #16 (3 connections now open)
+2019-06-22T18:35:50.701+0000 I NETWORK  [conn16] end connection 172.19.0.1:48210 (2 connections now open)
+2019-06-22T18:35:52.698+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48326 #17 (3 connections now open)
+2019-06-22T18:36:22.703+0000 I NETWORK  [conn17] end connection 172.19.0.1:48326 (2 connections now open)
+2019-06-22T18:36:24.703+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48366 #18 (3 connections now open)
+2019-06-22T18:36:54.706+0000 I NETWORK  [conn18] end connection 172.19.0.1:48366 (2 connections now open)
+2019-06-22T18:36:56.700+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48426 #19 (3 connections now open)
+2019-06-22T18:37:26.703+0000 I NETWORK  [conn19] end connection 172.19.0.1:48426 (2 connections now open)
+2019-06-22T18:37:28.700+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48478 #20 (3 connections now open)
+2019-06-22T18:37:37.277+0000 I STORAGE  [thread21] createCollection: config.system.sessions with generated UUID: 003a7bca-c5b9-4045-bc05-91173e46fb5d
+2019-06-22T18:37:37.983+0000 I INDEX    [thread21] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2019-06-22T18:37:37.983+0000 I INDEX    [thread21] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2019-06-22T18:37:37.987+0000 I INDEX    [thread21] build index done.  scanned 0 total records. 0 secs
+2019-06-22T18:37:37.988+0000 I COMMAND  [thread21] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:98 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_msg 710ms
+2019-06-22T18:37:58.702+0000 I NETWORK  [conn20] end connection 172.19.0.1:48478 (2 connections now open)
+2019-06-22T18:38:00.700+0000 I NETWORK  [listener] connection accepted from 172.19.0.1:48542 #21 (3 connections now open)
+2019-06-22T18:38:18.033+0000 I NETWORK  [conn14] end connection 127.0.0.1:42326 (2 connections now open)
+2019-06-22T18:38:18.064+0000 I NETWORK  [conn15] end connection 127.0.0.1:42328 (1 connection now open)
+2019-06-22T18:38:18.569+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42744 #22 (2 connections now open)
+2019-06-22T18:38:18.570+0000 I NETWORK  [conn22] received client metadata from 127.0.0.1:42744 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-22-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-22T18:38:18.574+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:42746 #23 (3 connections now open)
+2019-06-22T18:38:18.576+0000 I NETWORK  [conn23] received client metadata from 127.0.0.1:42746 conn: { driver: { name: "PyMongo", version: "3.8.0" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "4.18.0-22-generic" }, platform: "CPython 3.6.7.final.0" }
+2019-06-22T18:38:30.709+0000 I NETWORK  [conn21] end connection 172.19.0.1:48542 (2 connections now open)
+2019-06-22T18:38:31.181+0000 I NETWORK  [conn22] end connection 127.0.0.1:42744 (1 connection now open)
+2019-06-22T18:38:31.214+0000 I NETWORK  [conn23] end connection 127.0.0.1:42746 (0 connections now open)

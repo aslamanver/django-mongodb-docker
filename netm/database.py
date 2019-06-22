@@ -5,7 +5,8 @@ import json
 from mongoengine import *
 import logging
 
-connect('netm', host='mongodb.netm', port=27017)
+# connect('netm', host='mongodb.netm', port=27017)
+connect('netm')
 logger = logging.getLogger(__name__)
 
 
@@ -15,6 +16,7 @@ class Customer(Document):
 
 
 class Members(Document):
+
     email = StringField()
     password = StringField()
     first_name = StringField()
@@ -26,6 +28,8 @@ class Members(Document):
     status = IntField()
     verification_code = StringField()
 
+    def getMobile(self) :
+        return self.mobile
 
 # Don't refer after this line
 class Database():
@@ -33,7 +37,7 @@ class Database():
     col_name = "members"
 
     def __init__(self):
-        self.client = MongoClient('mongodb://mongodb.netm:27017')
+        self.client = MongoClient('mongodb://localhost:27017')
         self.db = self.client["netm"]
         self.col = self.db[self.col_name]
 
