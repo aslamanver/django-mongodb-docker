@@ -10,6 +10,7 @@ import logging
 import random
 import time
 import requests
+from datetime import datetime
 
 from mongoengine import *
 from netm.helpers import *
@@ -32,6 +33,7 @@ class Members(Document):
     dob = StringField()
     user_type = StringField()
     mobile = StringField()
+    sms_sent_at = DateTimeField()
     status = IntField()
     verification_code = StringField()
     access_token = StringField()
@@ -69,6 +71,7 @@ class Members(Document):
         self.verification_code = get_random_string(length=1, allowed_chars='ABCDEFGHIJKLMNOPQRSTUVWXYZ').capitalize() + str(random.randint(1000, 9999))
 
     def setMobileVCode(self) :
+        self.sms_sent_at = datetime.now()
         self.verification_code = str(random.randint(1000, 9999))
 
     def hashPassword(self) :
@@ -84,6 +87,9 @@ class Members(Document):
     def sendMobileVCode(self) :
         send_sms_thread(self.getMobile(), self.first_name, self.verification_code + ' is your Kithunu verification code')
 
+    def smsWaiting(self, get_time = False) :
+        if get_time : return int((datetime.now() - self.sms_sent_at).total_seconds())
+        return ((datetime.now() - self.sms_sent_at).total_seconds()) < (60 * 2) if  self.sms_sent_at  else False
 
 # Don't refer after this line
 class Database():

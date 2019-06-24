@@ -9,6 +9,7 @@ STATUS_CODE_FAILED = 404
 STATUS_CODE_EMAIL_EXISTS = 777
 STATUS_CODE_EMAIL_NOT_EXISTS = 555
 STATUS_CODE_SMS_SEND_FAILED = 666
+STATUS_CODE_SMS_SEND_WAIT = 665
 
 def signup_a(request):
 
@@ -76,6 +77,13 @@ def signup_mobile_add(request):
         member: Members = Members.objects(email=form['email']).first()
 
         if member :
+
+            if member.smsWaiting() :
+                return netmJsonResponse({
+                    'statusCode' : STATUS_CODE_SMS_SEND_WAIT,
+                    'responseData' : { 'smsInterval' : member.smsWaiting(True) }
+                })
+
             member.addMobile(form['mobile'])
             member.sendMobileVCode()
             return netmJsonResponse(STATUS_CODE_SUCCESS)
