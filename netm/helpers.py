@@ -10,6 +10,9 @@ from django.core.mail import send_mail
 
 logger = logging.getLogger(__name__)
 
+def get_access_token(request) :
+    return request.headers['Netm-Token'] if 'Netm-Token' in list(request.headers) else None
+
 def netmJsonResponse(body='{ "status_code" : 999 }'):
 
     if isinstance(body, int):

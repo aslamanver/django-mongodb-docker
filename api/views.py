@@ -111,3 +111,16 @@ def signup_mobile_verify(request):
 
         return netmJsonResponse(STATUS_CODE_FAILED)
 
+def auth_test(request):    
+
+    if(get_session_user_member(request) != None) :
+        return netmJsonResponse(STATUS_CODE_SUCCESS) 
+        
+    return netmJsonResponse(STATUS_CODE_FAILED)
+
+def get_session_user_member(request) :
+    accessToken = get_access_token(request)
+    if(accessToken is not None) :
+        return Members.objects(access_token=accessToken).first()
+    return None
+    

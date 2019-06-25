@@ -9,4 +9,5 @@ urlpatterns = [
     path('signup/mobile_add', views.signup_mobile_add, name = 'signup_mobile_add'),
     path('signup/mobile_verify', views.signup_mobile_verify, name = 'mobile_verify'),
 
+    path('auth_test', views.auth_test, name = 'auth_test')
 ]
